@@ -1048,6 +1048,26 @@ nav ul li a:hover {
   background-color: #000;
   border-radius: 2px;
 }
+/* ハンバーガー改善 */
+.hamburger {
+  width: 36px;
+  height: 26px;
+}
+
+.hamburger span {
+  height: 4px;
+  background-color: #2f66f3;
+}
+.menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* スマホ対応 */
 @media (max-width: 768px) {
