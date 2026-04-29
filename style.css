@@ -938,6 +938,33 @@ nav ul li a {
 nav ul li a:hover {
   color: #2f64d6;
 }
+/* ===== 選ばれる3つの理由 セクション ===== */
+
+/* PC */
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.strength-item {
+  background: #f8faff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.strength-item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2f64d6;
+}
+
+.strength-item p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
 /* -------------------------------
    Responsive改善
 --------------------------------*/
@@ -1060,4 +1087,58 @@ nav ul li a:hover {
     font-size:30px;
   }
 }
+}
+/* ===== タブレット対応 ===== */
+@media (max-width: 1024px) {
+  .strength-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .strength-item {
+    padding: 30px;
+  }
+
+  .strength-item h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 768px) {
+  .strength-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .strength-item {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .strength-item h3 {
+    font-size: 20px;
+  }
+
+  .strength-item p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+
+/* ===== 小型スマホ対応 ===== */
+@media (max-width: 480px) {
+  .strength-item {
+    padding: 20px 15px;
+  }
+
+  .strength-item h3 {
+    font-size: 18px;
+  }
+
+  .strength-item p {
+    font-size: 14px;
+  }
 }
