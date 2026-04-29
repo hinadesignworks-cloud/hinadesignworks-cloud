@@ -844,6 +844,100 @@ textarea{
 .category-item:hover img{
   transform:scale(1.03);
 }
+
+/* Hero Section */
+.hero h2 {
+  font-size: 56px;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 18px 38px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+
+.btn.primary {
+  background-color: #2f64d6;
+  color: white;
+  box-shadow: 0 8px 20px rgba(47, 100, 214, 0.25);
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn.secondary {
+  border: 2px solid #2f64d6;
+  color: #2f64d6;
+  background: white;
+}
+
+.btn.secondary:hover {
+  background: #2f64d6;
+  color: white;
+}
+
+/* Strengths Section */
+.strengths {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.strengths h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.strength-item {
+  background: #f8faff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.strength-item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2f64d6;
+}
+
+.strength-item p {
+  color: #666;
+  line-height: 1.8;
+}
+nav ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #2f64d6;
+}
 /* -------------------------------
    Responsive改善
 --------------------------------*/
